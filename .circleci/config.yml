@@ -1,0 +1,18 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: apicciau/coq_ubuntu
+
+    steps:
+      - run:
+          name: Install dependencies
+          command: |
+            apt-get install ca-certificates -y
+      - checkout
+      - run:
+          name: Analyze all Coq files
+          command: |
+            python3 ./.circleci/analyze_files.py . /tmp/detailed_log.txt
+      - store_artifacts:
+          path: /tmp/detailed_log.txt
