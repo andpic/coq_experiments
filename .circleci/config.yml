@@ -1,0 +1,12 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: coqorg/coq:latest
+
+    steps:
+      - checkout
+      - run:
+          name: Compile all Coq files
+          command: |
+            find . -type f -name "*.v" -exec ./circleci/compile_file.sh {} \;
