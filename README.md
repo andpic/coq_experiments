@@ -6,10 +6,10 @@ A collection of exercises and experiments using the theorem prover Coq.
 ## Background
 
 Most of the content of this repository is an implementation of the exercises
-in the following report:
-
-*C. Paulin-Mohring*. Introduction to the Coq proof-assistant for practical 
-software verification. Technical Report. 2012. DOI: 10.1007/978-3-642-35746-6_3. 
+in the following reports and tutorials:
+*   *C. Paulin-Mohring*. Introduction to the Coq proof-assistant for practical 
+    software verification. Technical Report. 2012. DOI: 10.1007/978-3-642-35746-6_3. 
+*   *M. Nahas*. Coq Tutorial. 2012.
 
 ## Copyright
 
